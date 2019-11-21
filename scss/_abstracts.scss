@@ -1,0 +1,11 @@
+$black: #060606;
+$white: #f9f9f9;
+$background: #2b4042;
+
+@mixin mq($breakpoint) {
+	@if $breakpoint == m {
+		@media (max-width: 500px) and (orientation: portrait), (max-height: 450px) and (orientation: landscape) {
+			@content;
+		}
+	}
+}
